@@ -120,7 +120,7 @@ def dashboard():
 
         feedback_data = list(db.feedback.find({}))
 
-        return render_template('dashboard.html', email=email, name=name, feedback_data=feedback_data)
+        return render_template('Dashboard.html', email=email, name=name, feedback_data=feedback_data)
     except jwt.ExpiredSignatureError:
         return 'Token expired. Please log in again.'
     except jwt.InvalidTokenError:
