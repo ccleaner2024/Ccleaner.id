@@ -1,0 +1,171 @@
+/* HERO SHOP */
+.hero {
+  height: 620px;
+  background-size: cover;
+  color: #1B261A;
+}
+.hero-shop {
+  margin-top: 50px;
+}
+
+.hero-shop>.row {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.title-hero {
+  font-size: 50px;
+  color: white;
+}
+
+.lead {
+  font-size: 22px;
+  color: white;
+}
+
+.btn-hero {
+  font-size: 16px;
+  background-color: #ff5b00;
+  color: white;
+  border-color: #ff5b00;
+  border-radius: 20px;
+}
+
+.btn-hero:hover {
+  background-color: transparent;
+  color: #ff5b00;
+  border-color: #ff5b00;
+
+}
+
+#hero-shop,
+#kategori {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* KATEGORI */
+.kategori {
+  height: 1257px;
+}
+
+.card-shop-content {
+  padding: 0;
+}
+
+.card-kategori {
+  background-color: transparent;
+}
+
+.title-kategori {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 72px;
+
+}
+.title-card {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  height: 60px;
+}
+.card-text {
+  font-size: 16px;
+  color: white;
+}
+
+.btn-kategori {
+  width: 118px;
+  height: 38px;
+  border-radius: 20px;
+
+}
+
+.btn-kategori:first-child {
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-kategori:last-child {
+  color: black;
+  background-color: #84C368;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.isi-kategori {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+
+/* CARA PENGGUNA */
+.title-shop {
+  text-align: center;
+}
+
+.title-shop> p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.cara-pengguna {
+  margin-left: 198px;
+  margin-right: 198px;
+}
+
+.feature {
+  text-align: center;
+  width: 257px;
+  height: 246px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+}
+
+.cara-pengguna>.feature>h3 {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.cara-pengguna>.feature>p {
+  font-size: 16px;
+}
+
+
+/* HASIL */
+.hasil {
+  height: 678px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.hasil>.hasil-2 {
+  padding-top: auto !important;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.hasil-3 {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 1184px;
+  height: 388px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.hasil-3>img {
+  margin-top: 100px;
+  margin-left: 86px;
+}
+

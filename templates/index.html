@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/img/icon/logo.png" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- icon boostraps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma-rtl.min.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>   
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- JUDUL -->
+    <title> CCLEANER - Pembersih Sepatu Terbaik</title>
+
+    <style>
+        @import url('../static/css/default.css');
+        @import url('../static/css/style.css');
+    </style>
+    <script>
+      function beliSekarang() {
+        window.location.href = "/shop";
+      }
+      function cekSelanjutnya() {
+        window.location.href = "/cek";
+      }
+
+      function f_home() {
+        window.location.href = "/index";
+      }
+    </script>
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navigation"></div>
+      <div class="logo">
+        <h1>CCLEANER.ID</h1>
+      </div>
+      <div class="nav-list">
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="/contactus">Contact Us</a>
+        <a href="/faq">FAQ</a></span>
+      </div>
+      <div class="cart">
+        <a href="https://wa.me/81219504137" class="icon bi bi-whatsapp "></a>
+      </div>
+    </nav>
+
+    <!-- hero home -->
+    <section id="hero-home">
+      <div class="hero flex-row container">
+        <div class="left ">
+          <p class="judul">PERAWATAN SEPATU
+            PALING DIPERCAYA <span class="span-hero" >DIPLANET INI </span>
+          </p>
+          <p class="title2">ECO > NON TOXIC > POWERFULL</p>
+          <div class="button-home">
+            <button onclick="beliSekarang()"  class="btn belisekarang"><span>Beli Sekarang</span></button>
+            <button onclick="cekSelanjutnya()" class="btn selengkapnya"><span >Selengkapnya</span></button>
+            </div>
+          </div>
+        <img class="img-hero " src="../static/img/banner/img-product-home.png" alt>
+      </div>
+    </section>
+    
+    <!-- section about home -->
+    <section id="about">
+      <div class="about">
+        <div class="title">
+          <div class="title-section" id="title-section" style="color: black;">KENAPA HARUS MENGGUNAKAN CCLEANER ?</div>
+          <img src="../static/img/icon/line-about.png" />
+        </div>
+        <br class="line">
+        <div class="about-center flex-row">
+          <div class="satu flex-col">
+            <div class="pertama flex-col">
+              <img src="../static/img/icon/icon-air.png" alt>
+              <p class="text-about">Water Less</p>
+              <p>Tanpa menggunakan air dan mudah digunakan</p>
+            </div>
+            <div class="kedua flex-col">
+              <img src="../static/img/icon/icon-botol.png" alt>
+              <p class="text-about">Bahan Alami</p>
+              <p>100% aman untuk digunakan</p>
+            </div>
+          </div>
+
+          <img class="img-about" src="../static/img/icon/img-about.png" alt>
+          <div class="dua">
+            <div class="ketiga flex-col">
+              <img src="../static/img/icon/icon-jam.png" alt>
+              <p class="text-about">Cepat & Efektif</p>
+              <p>10x lebih cepat membersihkan kotoran secara menyeluruh</p>
+            </div>
+            <div class="keempat flex-col">
+              <img src="../static/img/icon/icon-sepatu.png" alt>
+              <p class="text-about">All Material</p>
+              <p>Aman digunakan semua jenis bahan sepatu</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- section prioritas home -->
+    <div id="prioritas">
+      <div class="prioritas" style="background-image: url(../static/img/bg/background-prioritas.png); background-size: cover;">
+        <div class="title">
+          <div class="title-section" id="title-section">PRIORITAS KAMI</div>
+          <img src="../static/img/icon/line-prioritas.png" />
+        </div>
+
+        <div class="prioritas-content flex-row">
+          <li class="flex-col">
+            <img src="../static/img/icon/icon-diamond.png" alt>
+            <span>KUALITAS</span>
+          </li>
+          <li class="flex-col">
+            <img src="../static/img/icon/icon-people.png" alt>
+            <span>KEPUASAN</span>
+          </li>
+          <li class="flex-col">
+            <img src="../static/img/icon/icon-speaking.png" alt>
+            <span>KOMUNIKASI</span>
+          </li>
+        </div>
+      </div>
+
+      <!-- section galeri home-->
+      <div id="galeri">
+        <div class="galeri">
+          <div class="galeri-content justify-content-center">
+            <div class="title">
+              <div class="title-section" id="title-section">GALERI KAMI</div>
+              <img src="../static/img/icon/line-galeri.png" />
+            </div>
+            <div class="flex-row list-galeri">
+              {% for item in galeri_data %}
+              <div class="flex-col bottom">
+                {% if item.gambar2 %}
+                <img class="panjang" src="{{ url_for('static', filename='assets/update_img/' + item.gambar2) }}" />
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section testimoni home -->
+      <div id="testimoni">
+        <div class="testimoni-section ">
+          <div class="testimoni-content justify-content-center">
+            <div class="title">
+              <div class="title-section" id="title-section">TESTIMONI KAMI</div>
+              <img src="../static/img/icon/line-testimoni.png" />
+            </div>
+            <div class="flex-col card-content justify-content-center">
+              <div class="flex-row container">
+                <div class="card-container">
+                  <div class="listbox">
+                    {% for item in galeri_data %}
+                    <div class="option">
+                      <div class="background-shadow">
+                        <div class="profil-content">
+                          <div class="margin">
+                            <div class="foto-pengguna">
+                              <img src="{{ url_for('static', filename='assets/update_img/' ~ item.gambar1) }}" />
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="nama-pengguna">
+                              <span>{{ item.nama }}</span>
+                            </div>
+                            <div class="paket">
+                              <span>Pilihan paket yang dibeli</span>
+                            </div>
+                            <div class="flex-row rating">
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="teks-content">
+                          <p>{{ item.deskripsi }}</p>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                    <div class="option">
+                      <div class="background-shadow">
+                        <div class="profil-content">
+                          <div class="margin">
+                            <div class="foto-pengguna">
+                              <img src="../static/img/user-testimoni/Testimoni2.jpg" />
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="nama-pengguna">
+                              <span>l**o</span>
+                            </div>
+                            <div class="paket">
+                              <span>Pilihan paket yang dibeli</span>
+                            </div>
+                            <div class="flex-row rating">
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="teks-content">
+                          <p>Mantap barangnya langsung bersih dan cakep</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option">
+                      <div class="background-shadow">
+                        <div class="profil-content">
+                          <div class="margin">
+                            <div class="foto-pengguna">
+                              <img src="../static/img/user-testimoni/Testimoni3.jpg" />
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="nama-pengguna">
+                              <span>Z**h</span>
+                            </div>
+                            <div class="paket">
+                              <span>Pilihan paket yang dibeli</span>
+                            </div>
+                            <div class="flex-row rating">
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                              <span><i class="bi bi-star-fill"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="teks-content">
+                          <p>paket sesuai pesanan...Rekomendedlah...👍👍👍👌👌👌</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      
+
+     
+
+      <!-- footer -->
+      <footer class="card text random2">
+        <div class="card-body dalam-card flex-row">
+          <div class="logo-footer">
+            <p class="flex-col"><a href="/">CCLEANER</a></p>
+            <p class="flex-col">MEMBUAT SEPATU TAMPAK SEPERTI BARU KEMBALI</p>
+          </div>
+          <div class=" random ">
+            <p class="card-title"><a  href="/" class="link">HOME</a></p>
+            <p class="card-text">Kelebihan Ccleaner</p>
+            <p class="card-text">Prioritas kami</p>
+            <p class="card-text">Galeri</p>
+            <p class="card-text">Testimoni</p>  
+          </div>
+          <div class=" random">
+            <p class="card-title"><a   href="/shop" class="link">SHOP</a></p>
+            <p class="card-text">Produk</p>
+            <p class="card-text">Cara penggunaan</p>
+            <p class="card-text">Hasil</p>  
+          </div>
+          <div class="random">
+            <p class="card-title"><a  href="/contactus" class="link">CONTACT US</a></p>
+            <p class="card-text">Kirim pesan</p>
+            <p class="card-text">Cek lokasi</p>  
+          </div>
+          <div class="random">
+            <p class="card-title"><a  href="/faq" class="link">FAQ</a></p>
+            <p class="card-text">Pertanyaan umum</p>  
+          </div>
+          <div class="right">
+            <div class="contact flex-row" style="justify-content: flex-start;">
+              <img src="../static/img/icon/icon-telp.png" alt="">
+              <p><a href="/0812-1950-4137" class="link" >0812-1950-4137</a></p>  
+            </div>
+            <div class="contact flex-row" style="justify-content: flex-start;">
+              <img src="../static/img/icon/icon-email.png" alt="">
+              <p><a href="cclenaer207@gmail.com" class="link">ccleaner207@gmail.com</a></p>  
+            </div>
+            <div class="contact flex-row" style="justify-content: flex-start;">
+              <img src="../static/img/icon/icon-wa.png" alt="">
+              <p><a href="+62 81219504137" class="link" >+62 81219504137</a></p>  
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary text-center copy">
+          © Froshlass copyright
+        </div>
+      </footer>
+
+          <!-- external js-->
+<script src="../static/js/default.js"></script>
+
+    </body>
+  </html>

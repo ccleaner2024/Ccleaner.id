@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Dashboard - CCLEANER.ID</title>
+
+        <style>
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        span,
+        li,
+        button,
+        a,
+        div {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins-SemiBold", sans-serif;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar {
+            position: absolute;
+            width: 100%;
+            height: 178px;
+            background-color: white;
+        }
+
+        .navbar .left {
+            margin-left: 260px;
+        }
+
+        .navbar .right {
+            margin-right: 87px;
+            margin-left: auto;
+        }
+
+        .navbar .right .line {
+            margin-left: 30px;
+            margin-right: 15px;
+        }
+
+        .navbar .right>p {
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            margin-left: 45px;
+        }
+
+        .navbar .title {
+            height: 20px;
+            top: 40px;
+            left: 320px;
+            font-family: "Montserrat-SemiBold", Helvetica;
+            font-weight: 600;
+            font-size: 30px;
+            color: black;
+            letter-spacing: 0;
+            line-height: 20px;
+            white-space: nowrap;
+            margin-bottom: 10px;
+        }
+
+        .navbar .sub-title {
+            height: 30px;
+            top: 65px;
+            left: 320px;
+            font-family: "Montserrat-Light", Helvetica;
+            font-size: 20px;
+            font-weight: 300;
+            color: black;
+            letter-spacing: 0;
+            line-height: 30px;
+            white-space: nowrap;
+        }
+
+        .navbar .bi {
+            font-size: 25px;
+            top: 45px;
+            left: 1060px;
+        }
+
+        .navbar .line {
+            width: 5px;
+            height: 55px;
+            top: 35px;
+            left: 1100px;
+        }
+
+        .navbar .Profile {
+            width: 70px;
+            height: 70px;
+            top: 25px;
+            left: 1130px;
+        }
+
+        /* navbar samping */
+        .main {
+            width: 100%;
+            height: 1024px;
+            align-items: flex-start;
+            background-color: #1E3B2E;
+        }
+
+        .main-left {
+            background-color: white;
+            position: relative;
+            width: 243px;
+            height: 1024px;
+            box-shadow: 0px 4px 4px #0000;
+            margin-right: 1195px;
+            border-right: solid 2px gray;
+        }
+
+        .main-left .logo {
+            width: 175px;
+            height: 35px;
+            margin-top: 60px;
+            margin-left: 24px;
+            margin-right: 43px;
+            margin-bottom: 52px;
+        }
+
+        p {
+            color: black;
+            font-size: 18px;
+        }
+
+        span {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        i {
+            color: black;
+            font-size: 30px;
+        }
+
+        li>div {
+            color: black;
+            font-size: 18px;
+            width: 143px;
+            padding: 10px;
+            margin-left: auto;
+        }
+
+        .menu-top {
+            margin-left: 24px;
+            margin-right: 26px;
+        }
+
+        .menu-top>p {
+            margin-bottom: 30px;
+
+        }
+
+        .menu-top>a>li {
+            margin-bottom: 30px;
+        }
+
+        /* hover teks & icon */
+        li.flex-row:hover i.bi,
+        li.flex-row:hover div {
+            color: #ff5b00;
+        }
+
+        .menu-bottom {
+            height: 500px;
+            margin-left: 24px;
+            margin-right: 26px;
+        }
+
+        .menu-bottom>p {
+            margin-top: 90px;
+            margin-bottom: 30px;
+        }
+
+        .menu-bottom>a>.logout {
+            margin-top: 350px;
+        }
+
+        .main-middle {
+            background-color: white;
+            position: absolute;
+            width: 950px;
+            height: 770px;
+            top: 220px;
+            left: 280px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px #0000005e;
+        }
+
+        .main-middle > h1 {
+            font-size: 30px;
+            margin-left: 400px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+
+        .main-middle > form {
+            margin-left: 50px;
+            margin-right: 80px;
+        }
+
+        .main-middle>.container-main {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 60px;
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: #FF5B00;
+            border-color: white;
+            border-radius: 15px;
+        }
+
+        .btn-primary:hover {
+            color: #FF5B00;
+            background-color: #ffffff;
+            border-color: #FF5B00;
+        }
+
+        .title-kotak-masuk {
+            font-size: 20px;
+            margin-left: 110px;
+            margin-top: -30px;
+            font-weight: 300;
+        }
+
+        .table.table.table-hover {
+            width: 800px;
+            position: absolute;
+            margin-left: 60px;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        .bi-envelope-arrow-down::before {
+            content: "\f7b8";
+            margin-left: 60px;
+            margin-top: 45px;
+            color: #ff5b00;
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- navbar atas -->
+        <div class="navbar flex-row">
+            <div class="left">
+                <h1 class="title">Selamat Datang, {{ name }}</h1>
+                <p class="sub-title">Silahkan cek kotak masuk anda terlebih
+                    dahulu</p>
+            </div>
+            <div class="right flex-row">
+                <i class="bi bi-bell"></i>
+                <img class="line" src="../static/img/dashboard/line.png"
+                    style="font-size: 30px;">
+                <img class="Profile" src="../static/img/dashboard/Profile.png"
+                    alt>
+                <p>Super Admin</p>
+            </div>
+        </div>
+
+        <!-- navbar bagian kiri -->
+        <div class="main flex-col">
+
+            <div class="main-left">
+                <img class="logo" src="../static/img/dashboard/Logo.png" alt>
+                <div class="menu-top ">
+                    <p>Menu</p>
+                    <a href>
+                        <li class="flex-row">
+                            <i class="bi bi-grid-1x2-fill"></i>
+                            <div>Dashboard</div>
+                        </li>
+                    </a>
+                    <a href="update">
+                        <li class="update flex-row">
+                            <i class="bi bi-upload"></i>
+                            <div>Update</div>
+                        </li>
+                    </a>
+                    <a href>
+                        <li class="kotak-masuk flex-row">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>Inbox</div>
+                        </li>
+                    </a>
+                </div>
+
+                <div class="menu-bottom">
+                    <p>Setting</p>
+                    <a href>
+                        <li class="setting flex-row">
+                            <i class="bi bi-gear"></i>
+                            <div>Setting</div>
+                        </li>
+                    </a>
+                    <a href="/login">
+                        <li class="logout flex-row">
+                            <i class="bi bi-box-arrow-in-left"></i>
+                            <div>Logout</div>
+                        </li>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="main-middle">
+                <h1>Edit Data</h1>
+                <form action="{{ url_for('edit_update', id=data._id) }}" method="post" enctype="multipart/form-data">
+                    <div class="mb-2">
+                        <label for="nama" class="form-label">Update Name</label>
+                        <input type="text" class="form-control" name="nama" value="{{ data.nama }}" required><br>
+                    </div>
+                    <div class="mb-2">
+                        <label for="nama_paket" class="form-label">Update Name package</label>
+                        <input type="text" class="form-control" name="nama_paket" value="{{ data.nama_paket }}" required><br>
+                    </div>
+                    <div class="mb-2">
+                        <label for="deskripsi" class="form-label">Update comment</label>
+                        <textarea name="deskripsi" class="form-control" required>{{ data.deskripsi }}</textarea><br>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="gambar1" class="form-label">Update Profile</label>
+                        <input type="file" class="form-control" name="gambar1"><br>
+                    </div>
+                    
+                    <div class="mb-2">
+                        <label for="gambar2" class="form-label">Update Gallery</label>
+                        <input type="file" class="form-control" name="gambar2"><br>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</html>
