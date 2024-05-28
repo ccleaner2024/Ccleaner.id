@@ -1,8 +1,9 @@
 /* HERO SHOP */
 .hero {
-  height: 620px;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #1B261A;
+  padding-bottom: 50px;
 }
 .hero-shop {
   margin-top: 50px;
@@ -46,7 +47,10 @@
 
 /* KATEGORI */
 .kategori {
-  height: 1257px;
+  /* height: 1257px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
 }
 
 .card-shop-content {
