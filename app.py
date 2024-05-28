@@ -13,6 +13,7 @@ from werkzeug.utils import secure_filename
 from datetime import datetime, timedelta
 import os
 
+# database mongodb
 dotenv_path = join(dirname(__file__),'.env')
 load_dotenv(dotenv_path)
 
@@ -27,12 +28,6 @@ app = Flask(__name__)
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["SECRET_KEY"] = "SPARTA"
-
-# database mongodb
-client = MongoClient(
-    "mongodb+srv://ccleaner207:CCLEANER123@ccleaner.z77nisa.mongodb.net/?retryWrites=true&w=majority&appName=CCLEANer")
-db = client.mydatabase
-
 
 @app.route("/", methods=["GET"])
 def home():
